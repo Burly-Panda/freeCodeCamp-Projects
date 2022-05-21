@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Game Questionnaire</title>
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
+</head>
+<body>
+<div class="form">
+    <h1 id="title">Welcome!</h1>
+    <p id="description">Fill out this form to share your gaming favorites!</p>
+    <p class="joystick"><img src="C:\Users\thebu\OneDrive\Documents\TEST\images\joystick.png" alt="controller-icon" width="50" height="50"></p>
+    <form action="https://www.example.com">
+        <fieldset>
+            <label>Enter Your First Name: <input type="text" name="first-name" required/> </label>
+            <label>Enter Your Last Name: <input type="text" name="last-name" required /></label>
+            <label>Enter Your Email Address: <input type="email" name="email" required /></label>
+        </fieldset>
+        <fieldset>
+            <h3 name="favorite-current-console">Which is your favorite current console?</h3>
+            <label><input type="radio" name="console" class="inline" /> Xbox <img src="C:\Users\thebu\OneDrive\Documents\TEST\images\xbox-logo.png" alt="xbox-logo" width="100" height="80"></label>
+            <label><input type="radio" name="console" class="inline" /> Playstation <img src="C:\Users\thebu\OneDrive\Documents\TEST\images\playstation-logo.png" alt="playstation-logo" width="60" height="50"></label>
+            <label><input type="radio" name="console" class="inline" /> Switch <img src="C:\Users\thebu\OneDrive\Documents\TEST\images\switch-logo.png" alt="switch-logo" width="60" height="60"></label>
+            <label><input type="radio" name="console" class="inline" /> PC <img src="C:\Users\thebu\OneDrive\Documents\TEST\images\pc-logo.png" alt="pc-logo" width="60" height="60"></label></label>
+        </fieldset>
+        <fieldset>
+            <label>Upload a picture of your favorite video game character: <input type="file" name="file" /></label>
+            <label>How old were you when you started gaming? <input type="number" name="age" min="1" max="120" /></label>
+            <label>Who bought your first console? 
+                <select name="bought-console">
+                    <option value="">(select one)</option>
+                    <option value="1">Both Parents</option>
+                    <option value="2">Mom</option>
+                    <option value="3">Dad</option>
+                    <option value="4">Myself</option>
+                    <option value="5">Other</option>
+                </select>
+            </label>
+            <label>Write about one of your favorite gaming memories:
+                <textarea name="gaming-memory" rows="4" cols="25" placeholder="One of my favorite gaming memories is..."></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" value="Submit!" />
+    </form>
+</div>
+</body>
+</html>
