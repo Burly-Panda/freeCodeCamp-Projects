@@ -94,4 +94,5 @@ img {
     max-width: 500px;
     border-radius: 25px;
     backdrop-filter: blur(5px);
+    box-shadow: 0 0 20px 0 #1b1b32;
 }
