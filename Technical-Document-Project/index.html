@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css"/>
+        <title>Technical Document</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+        </style>
+            
+
+            <!-- Go back and italics the different elements withing the paragraphs.-->
+    </head>
+    <body>
+        <nav id="navbar">
+            <header>HTML and CSS Basics</header>
+            <ul class="navbar-list">
+                <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+                <li><a class="nav-link" href="#Why_Learn_HTML">Why Learn HTML</a></li>
+                <li><a class="nav-link" href="#Setting_Up_HTML_File">Setting Up HTML File</a></li>
+                <li><a class="nav-link" href="#CSS">CSS</a></li>
+                <li><a class="nav-link" href="#Hello_World">Hello World</a></li>
+            </ul>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="Introduction">
+                <header>Introduction</header>
+                <article>
+                    <p>
+                        Hello and welcome to our very basic introduction to HTML!
+                        </p>
+                        <br>
+                        <p> 
+                        HTML stands for Hyper-Text-Markup-Language.
+                        This is the standard markup language for creating web pages. It describes the structure of the web page,
+                        it consists of elements, and it tells the browser how to display content. HTML is a great place to begin
+                        your programming journey. It teaches you structure and gives you an understanding of how and why certain
+                        code works! A great free resource is <a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp.org.</a> 
+                    </p>
+                    <br>
+                    <p>Here are some reasons to learn HTMl:</p>
+                        <ul>
+                            <li>Creating a website for your business.</li>
+                            <li>HTML foundation helps with learning other pogramming languages.</li>
+                            <li>Looking to change your career.</li>
+                            <li>You will understand how websites work.</li>
+                            <li>It's free to learn!</li>
+
+                        </ul>
+
+                    <p>
+                        What is an element? An element is defined by an opening tag, the content, and the closing
+                        tag. 
+                        <br>
+                        <br>
+                        <code>&lt;tagname&gt;content of tag...&lt;/tagname&gt;</code>
+                        <br>
+                        <br>
+                        Note that some elements are <i>self-closing</i>, which means they do not require another closing tag.
+                    </p>
+                </article>
+            </section>
+            <br>
+            <div class="solid-divider"></div>
+            <br>
+            <section class="main-section" id="Why_Learn_HTML">
+                <header>Why Learn HTML</header>
+                <article>
+                    <p>
+                        Like previously mentioned above, HTML (and CSS), can be a great foundation
+                        for learning how to code. Learning HTML might also be useful for personal projects,
+                        e-commerce websites, etc. If you ever need a website, you will know how to make things
+                        function and how to style things.
+                    </p>
+                    <p>
+                        What is CSS? CSS stands for Cascading Style Sheets. This is where all of the flashy
+                        parts of a website come from. 
+                    </p>
+                    
+                </article>
+            </section>
+            <br>
+            <div class="solid-divider"></div>
+            <br>
+            <section class="main-section" id="Setting_Up_HTML_File">
+                <header>Setting Up HTML File</header>
+                <p>
+                    In order for our code to work, we must first create a .html file.
+                    You can even do this with notepad, though working in dedicated programming
+                    software makes things a lot easier.
+
+                    Now we begin entering in our HTML code. On the very first line you want to make
+                    sure that you put <i>&lt;!DOCTYPE html&gt;</i>. This declaration tells the browser
+                    what type of document to expect, and what to do with the information within that document.
+                
+                </p>
+                <br>
+                <p>We should have a basic page that looks like this.</p>
+                <code>&lt;!DOCTYPE html&gt;</code>
+                <br>
+                <p>Now we need an HTML element. This is the root element. All the code that
+                    we will be writing will be nested in this element.
+                </p>
+                <br>
+                <code>&lt;!DOCTYPE html&gt;
+                    <br>
+                    &lt;html&gt;
+                    <br>
+                    <br>
+                    &lt;/html&gt;
+                </code>
+                <br>
+                <p>
+                    Next we need to add a <i>&lt;head&gt;</i> element. This is where meta data about
+                    the HTML page lives. We will also add a <i>&lt;title&gt;</i> element to our code. This element
+                    specifies a title for the HTML page that will show in the Tab bar of your browser.
+                </p>
+                <code>&lt;!DOCTYPE html&gt;
+                    <br>
+                    &lt;html&gt;
+                    <br>
+                    <br>
+                    &lt;head&gt;
+                    <br>
+                    &lt;title&gt; Hello World! &lt;/title&gt;
+                    <br>
+                    &lt;/head&gt;
+                    <br>
+                    <br>
+                    &lt;/html&gt;</code>
+                    <br>
+                    <p>
+                        Now we need to add a <i>&lt;body&gt;</i> element to our web page 
+                        and fill it. A <i>&lt;body&gt;</i> element is the container for all visible
+                        content. This includes headings, paragraphs, images, links, tables, lists, and many more!
+
+                    </p>
+                    <code>
+                    &lt;!DOCTYPE html&gt;
+                    <br>
+                    &lt;html&gt;
+                    <br>
+                    <br>
+                    &lt;head&gt;
+                    <br>
+                    &lt;title&gt; Hello World! &lt;/title&gt;
+                    <br>
+                    &lt;/head&gt;
+                    <br>
+                    &lt;body&gt;
+                    <br>
+                    <br>
+                    &lt;h1&gt;Hello World!&lt;/h1&gt;
+                    <br>
+                    &lt;p&gt;You coded HTML!&lt;/p&gt;
+                    <br>
+                    <br>
+                    &lt;/html&gt;
+                    </code>
+            </section>
+            <br>
+            <div class="solid-divider"></div>
+            <br>
+            <section class="main-section" id="CSS">
+                <header>CSS</header>
+                <p>
+                    CSS stands for Cascading Style Sheets. CSS describes how HTML
+                    elements are to be displayed on screen, paper, or in other media.
+                    This is what we will use to style our web page.
+                </p>
+                <br>
+                <p>
+                    Originally we created an .html file. Now we need to create a CSS file,
+                    and link it to our HTML file. We should first create a <i>styles.css</i> file in the same folder as our HTML file.
+                </p>
+                <br>
+                <p>
+                    Now we should link it to our HTML file. We do this by using the <i>&lt;link&gt;</i> element. Please note
+                    that a <i>&lt;link&gt;</i> element is self closing.
+                </p>
+                <br>
+                <code>
+                    &lt;!DOCTYPE html&gt;
+                    <br>
+                    &lt;html&gt;
+                    <br>
+                    <br>
+                    &lt;head&gt;
+                    <br>
+                    &lt;link rel="stylesheet" href="styles.css"/&gt;
+                    <br>
+                    <br>
+                    &lt;title&gt; Hello World! &lt;/title&gt;
+                    <br>
+                    <br>
+                    &lt;/head&gt;
+                    <br>
+                    &lt;body&gt;
+                    <br>
+                    <br>
+                    &lt;h1&gt;Hello World!&lt;/h1&gt;
+                    <br>
+                    &lt;p&gt;You coded HTML!&lt;/p&gt;
+                    <br>
+                    <br>
+                    &lt;/html&gt;
+                    </code>
+                    <br>
+                    <p>
+                        We won't be going too in depth about CSS, so if you 
+                        would like to learn more, please visit <a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp.org</a>
+                        to continue in your programming journey!
+                    </p>
+                    <br>
+                    <p>
+                        Now open your styles.css file. We will be changing the color of our
+                        <i>&lt;h1&gt;</i> element to Blue. To do this, we put the following.
+                    </p>
+                    <br>
+                    <code>
+                        h1 {
+                            <br>
+                            color: Blue;
+                            <br>
+                        }
+                    </code>
+                    <br>
+                    <p>
+                        Remember to indent the "color: Blue;" line.
+                    </p>
+                    
+            </section>
+            <br>
+            <div class="solid-divider"></div>
+            <br>
+            <section class="main-section" id="Hello_World">
+                <header>Hello World</header>
+                <p>
+                    You've done it! You've written your first web page! Congrats!
+                    You are on an awesome road to learning how to code. It's fun, but also challenging.
+                    Don't give up! You can do it!
+                </p>
+                <br>
+                <p class="resources"><u>Resources used:</u> <a href="https://www.w3schools.com/html/html_intro.asp" target="_blank">w3schools HTML Introduction</a> and <a href="https://www.w3schools.com/css/css_intro.asp" target="_blank">w3schools CSS Introduction</a></p>
+            </section>
+        </main>
+
+
+    </body>
+
+
+</html>
